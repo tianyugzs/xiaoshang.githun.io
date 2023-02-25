@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    /* 博客：www.xfabe.com */
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+a,
+img {
+    color: #fff;
+    -webkit-touch-callout: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(125deg, #f64235, #eb1e62, #c648dc, #3e50b5, #2495f2);
+    background-size: 400%;
+    font-family: "montserrat";
+    perspective: 500px;
+    animation: move 15s infinite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+strong {
+    display: block;
+    max-width: 340px;
+    margin: 50px auto 20px auto;
+    background-color: #fff;
+    font-size: 1.2em;
+    border-radius: 30px;
+    padding: 5px 0;
+    box-shadow: inset 2px 3px 5px 0 #ffffff70, inset -2px 2px 5px 0 #b6b3b396;
+}
+
+strong marquee {
+    display: block;
+    width: 100%;
+    color: #9c27b0;
+}
+
+section {
+    position: relative;
+    max-width: 340px;
+    height: 380px;
+    margin: 10px auto;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+section:hover {
+    transform: rotateY(180deg);
+}
+
+section div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: inset 2px 3px 5px 0 #ffffff70, inset -2px 2px 5px 0 #b6b3b396;
+    padding: 10px 20px 30px;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+section div:first-child {
+    z-index: 1;
+}
+
+section div:last-child {
+    transform: rotateY(180deg);
+}
+
+section div:last-child a {
+    display: block;
+    margin: 10px auto;
+}
+
+section div:last-child h2 {
+    font-size: 1.5em;
+    color: #ff0000;
+    margin: 15px auto;
+}
+
+section div img {
+    border-radius: 50%;
+    border: 1px solid #000;
+    transition: all 1s;
+}
+
+section div img:hover {
+    transform: rotate(360deg);
+}
+
+section div h1,
+section div h3,
+section div p {
+    margin-top: 10px;
+}
+
+section div h1 {
+    color: #ff9800;
+}
+
+section div h3 {
+    font-size: 1.2em;
+    color: #d92215;
+}
+
+
+section div a {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    border: 2px solid greenyellow;
+    color: #fff;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+section div a:hover {
+    border-color: #35b60e;
+}
+
+section div a:active {
+    background-color: #1b7100;
+}
+
+section div p {
+    color: black;
+    transform: rotate3d(0, 1, 0.5, rad);
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    line-height: 1.8em;
+}
+
+footer p a {
+    border-bottom: 1px solid #fff;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    color: #ffeb3b;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的宝,来晚了</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.XXX.com/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="newtext()">
+    <strong>
+        <marquee>欢迎来到张某的私人空间</marquee>
+    </strong>
+    <section>
+        <div>
+            <img src="https://q2.qlogo.cn/headimg_dl?dst_uin=3233055956&amp;spec=100" alt="">
+            <h1>卑微张</h1>
+            <h3>已经20了</h3>
+            <p>又是当搞笑男的一天</p>
+            <br>
+            <a href="https://ti.qq.com/open_qq/index2.html?url=mqqapi%3a%2f%2fuserprofile%2ffriend_profile_card%3fsrc_type%3dweb%26version%3d1.0%26source%3d2%26uin%3d3233055956">看上加q</a>
+        </div>
+        <div>
+            <h2>我自己</h2>
+            
+            <img src="https://pic2.zhimg.com/100/v2-2ccdb5b0e4b2f35027cbae995d34c777_r.jpeg"width="50"height="50">
+            <a href="..." target="_blank" rel="noopener noreferrer">285 <span>帅哥</span></a>
+            <a href="..." target="_blank" rel="noopener noreferrer">沉淀中</a>
+            <a href="..." target="_blank" rel="noopener noreferrer">感谢学校</a>
+            <a href="..." target="_blank" rel="noopener noreferrer">今日份(电竞emo)</a>
+        </div>
+    </section>
+    <footer>
+        <p><a href="..." target="_blank" rel="noopener noreferrer">嗖嘎派出所 ©2021-2023  联合认证</a></p>
+        <p><a href="..." target="_blank" rel="noopener noreferrer"><span>早    </span> 提醒:已有宝</a></p>
+    </footer>
+    <script>
+        var text = document.title
+        var timerID
+        function newtext() {
+            clearTimeout(timerID)
+            document.title = text.substring(1, text.length) + text.substring(0, 1)
+            text = document.title.substring(0, text.length)
+            timerID = setTimeout("newtext()", 300)
+        };
+    </script>
+</body>
+
+</html>
